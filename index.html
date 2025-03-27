@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>2daymeal</title>
+     <link rel="stylesheet" href="style.css">
+     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+         </style>        
+ </head>
+ <style>
+     body {
+         background-color: #FFEAC5;
+         margin-top: 40%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         overflow: hidden;
+     }
+     span {
+         font-size: 130%;
+         color: #6B4423;
+         text-shadow: 2px 2px 0 #ede6e6, 4px 4px 0 #b9b7b7;
+         font-family: "kanit";
+         text-transform: uppercase;
+         display: inline-block;
+         transform: rotateY(0deg);
+         transition: 0.5s;
+         animation: bounce 0.4s ease infinite alternate;
+         position: relative; /* Added this to allow 'top' property */
+     }
+     h1 span:nth-child(1) {
+         animation-delay: 0s;
+     }
+     h1 span:nth-child(2) {
+         animation-delay: 0.1s;
+     }
+     h1 span:nth-child(3) {
+         animation-delay: 0.2s;
+     }
+     h1 span:nth-child(4) {
+         animation-delay: 0.3s;
+     }
+     h1 span:nth-child(5) {
+         animation-delay: 0.4s;
+     }
+     h1 span:nth-child(6) {
+         animation-delay: 0.5s;
+     }
+     h1 span:nth-child(7) {
+         animation-delay: 0.6s;
+     }
+     h1 span:nth-child(8) {
+         animation-delay: 0.7s;
+     }
+     h1 span:nth-child(9) {
+         animation-delay: 0.8s;
+     }
+     
+     @keyframes bounce {
+         100% {
+             top: -20px; 
+         }
+     }
+ </style>
+ <body>
+     <div class="container">
+         <h1>
+             <span>2</span>
+             <span>D</span>
+             <span>A</span>
+             <span>Y</span>
+             <span>M</span>
+             <span>E</span>
+             <span>A</span>
+             <span>L</span>
+         </h1>
+         <label for="genreSelect">Choose a Genre:</label>
+         <select id="genreSelect">
+             <option value="Noodles">Noodles</option>
+             <option value="Kabkhaow">Kabkhaow</option>
+             <option value="Desserts">Desserts</option>
+         </select>
+         <div class="woon">
+            <p id="randomWord"></p>
+        </div>
+        <button id="generateBtn">Random meals</button>
+     </div>
+ 
+     <script src="home.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,68 @@
+.container {
+    text-align: center;
+}
+label {
+    font-family: "Kanit", cursive;
+    font-size: 15px;
+}
+button {
+    padding: 10px 20px;
+    font-family: "Kanit", cursive;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #ffff;
+    border: rgb(164, 163, 163) solid 1px;
+    border-radius: 20px;
+    margin-top: 15px;
+    width: 65%;
+    position: absolute;
+    top: 70%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+}
+
+select {
+    padding: 6px;
+    font-family: "Kanit", cursive;
+    font-size: 17px;
+    margin: 10px 0;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+#randomWord {
+    font-size: 23px;
+    font-family: "Kanit", cursive;
+    font-weight: bold;
+    color: #f5e9d5;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative ;
+    text-align: center;
+}
+
+.woon {
+    width: 85%;
+    height: 86px;
+    border: 2px solid none;
+    border-radius: 30px;
+    background: rgb(107,68,35);
+    background: -moz-linear-gradient(top, rgb(107,68,35) 0%, rgb(135,86,44) 50%, rgb(107,68,35) 100%);
+    background: -webkit-linear-gradient(top, rgb(107,68,35) 0%, rgb(135,86,44) 50%, rgb(107,68,35) 100%);
+    background: linear-gradient(to bottom, rgb(107,68,35) 0%, rgb(135,86,44) 50%, rgb(107,68,35) 100%);
+    position: absolute;
+    top: 55%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
